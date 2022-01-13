@@ -25,7 +25,7 @@ You would then be prompted for your password, then logged in. If this is your fi
 
 When logging in the terminal should look like this: 
 
-![Terminal1](terminal1.png) 
+![Terminal1](terminal1.png | width=100 height=100) 
 ![Terminal2](terminal2.png)
 
 Now you have successfully remotely connected. 
