@@ -72,3 +72,47 @@ cd
 rm -r <directory>
 ```
 ![rm](rm.png)
+* To exit log out of the server, try: 
+```
+exit
+```
+
+## 4. Moving files with scp 
+We can move files from our local device onto the server using scp. First, choose or make a file that you would want to move to the server. Compile and run the file on your local device. For example, let us move a tester file onto the server. 
+
+Let's say I have a file called TestFile.java that consists of this code: 
+```
+class TestFile{
+    public static void main(String[] args){
+        System.out.println("This is the test file!");
+        }
+}
+```
+First, run this file in your terminal. 
+![runtest](runtest.png)
+
+Since we now know that the file complies and runs, we can now move it to our remote server. To do this we need to execute this command: 
+```
+scp <file name> <your account>:~/
+```
+In this case: 
+```
+scp TestFile.java cs15lwi22ake@ieng6.ucsd.edu:~/
+```
+They will ask for your password and then it will be copied over.
+
+![move](move.png)
+
+Now, let's check if the file copied over. To do this we will use the `ls` command in the remote server. 
+
+![moved](moved.png) 
+
+We can also compile and run the file on the server. 
+
+![movedtest](movedtest.png)
+
+## 5. Setting an SSH Key
+
+Instead of always having to input your password, we can create an ssh key that helps us skip this step. 
+
+You would need to 
