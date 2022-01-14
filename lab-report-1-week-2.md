@@ -25,7 +25,7 @@ You would then be prompted for your password, then logged in. If this is your fi
 
 When logging in the terminal should look like this: 
 
-![Terminal1](terminal1.png) 
+![Terminal1](terminal1.png)
 ![Terminal2](terminal2.png)
 
 Now you have successfully remotely connected. 
@@ -72,6 +72,7 @@ cd
 rm -r <directory>
 ```
 ![rm](rm.png)
+<<<<<<< HEAD
 * To exit log out of the server, try: 
 ```
 exit
@@ -116,3 +117,5 @@ We can also compile and run the file on the server.
 Instead of always having to input your password, we can create an ssh key that helps us skip this step. 
 
 You would need to 
+=======
+>>>>>>> 39fa73fdb1a7fde6c45309f10fb22a2cd971a1d7
