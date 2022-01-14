@@ -72,12 +72,12 @@ cd
 rm -r <directory>
 ```
 ![rm](rm.png)
-<<<<<<< HEAD
+
 * To exit log out of the server, try: 
 ```
 exit
 ```
-
+![exit](exit.png)
 ## 4. Moving files with scp 
 We can move files from our local device onto the server using scp. First, choose or make a file that you would want to move to the server. Compile and run the file on your local device. For example, let us move a tester file onto the server. 
 
@@ -116,6 +116,23 @@ We can also compile and run the file on the server.
 
 Instead of always having to input your password, we can create an ssh key that helps us skip this step. 
 
-You would need to 
-=======
->>>>>>> 39fa73fdb1a7fde6c45309f10fb22a2cd971a1d7
+You would need to input the following command into your terminal of your local device (client).
+```
+ssh-keygen
+```
+Just press the enter key when prompted. 
+![key](key.png)
+
+Now you need to move this key onto the remote server. First make a directory in the server by executing `mkdir .ssh`. 
+
+![ssh](ssh.png)
+
+Then exit and execute this command on your client server:
+```
+scp <location of where key is stored> <your account>:~/.ssh/authorized_keys
+```
+In this example: 
+```
+scp /Users/ajk/.ssh/id_rsa.pub cs15lwi22ake@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+
