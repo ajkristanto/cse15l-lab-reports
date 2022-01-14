@@ -135,4 +135,24 @@ In this example:
 ```
 scp /Users/ajk/.ssh/id_rsa.pub cs15lwi22ake@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
+![keyssh](keyssh.png)
 
+Now when you log into the server, you will not be prompted for your password! 
+
+![nopass](nopass.png)
+
+## 6. Optimizing Remote Running 
+Instead of logging into the remote server to run commands, you can run commands on your client instead. To do this it will follow this format: 
+```
+ssh <your account> "command" 
+```
+What this would do is log into the server, run the command, then log out. 
+
+An example would be 
+```
+ssh cs15lwi22ake@ieng6.ucsd.edu "ls"
+```
+This will list out all of the files in the remote server: 
+![lsr](lsr.png)
+
+Another trick would be that if you press the up arrow on your keyboard, the command line will be the last command you ran This will make it easier to do commands that are repeated a lot! 
