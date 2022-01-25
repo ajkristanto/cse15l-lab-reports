@@ -166,3 +166,21 @@ This will list out all of the files in the remote server:
 ![lsr](lsr.png)
 
 Another trick would be that if you press the up arrow on your keyboard, the command line will be the last command you ran This will make it easier to do commands that are repeated a lot! 
+
+Putting all of these together, we can minimize the number of keystrokes to run a program. 
+
+First, I edited WhereAmI.java to contain a print statement to test if it was edited correctly. 
+
+![edit](edit.png)
+
+Then to copy over to the server, I pressed the up arrow because I ran this command previously (1 keystroke) and then pressed enter (1 keystroke).
+
+Total number of keystrokes to copy over file: 2 keystrokes
+
+To test if the file has been edited, I pressed the up arrow twice to find `ssh cs15lwi22ake@ieng6.ucsd.edu ` then copy pasted the command `"javac WhereAmI.java; java WhereAmI"` to compile. Then I pressed enter (5 keystrokes).  
+
+Total number of keystrokes to check if file is copied over: 5 keystrokes. 
+
+Total number of keystrokes to copy and check file: 7 keystrokes. 
+
+![keystroke](keystroke.png)
