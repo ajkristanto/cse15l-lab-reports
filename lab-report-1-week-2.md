@@ -177,10 +177,10 @@ Then to copy over to the server, I pressed the up arrow because I ran this comma
 
 Total number of keystrokes to copy over file: 2 keystrokes
 
-To test if the file has been edited, I pressed the up arrow twice to find `ssh cs15lwi22ake@ieng6.ucsd.edu ` then I had already copied the command so I just pasted the command `"javac WhereAmI.java; java WhereAmI"` to compile and run. Then I pressed enter (4 keystrokes).  
+To test if the file has been edited, I pressed the up arrow twice to find `ssh cs15lwi22ake@ieng6.ucsd.edu ` then I had already copied the command so I just pasted (CMD + V) the command `"javac WhereAmI.java; java WhereAmI"` to compile and run. Then I pressed enter (5 keystrokes).  
 
-Total number of keystrokes to check if file is copied over: 4 keystrokes. 
+Total number of keystrokes to check if file is copied over: 5 keystrokes. 
 
-Total number of keystrokes to copy and check file: 6 keystrokes. 
+Total number of keystrokes to copy and check file: 7 keystrokes. 
 
-![keystroke](keystroke.png)
+![keystroke](keystroke.png) 
