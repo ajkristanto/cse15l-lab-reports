@@ -14,6 +14,10 @@ The file has no links to print out so it crashed because the code could not find
 
 The change that I made avoided this problem because before looking for the values between the brackets, it first checks the file if there is a pair of brackets in the first place. If there is, then we know that there will be a link in the file, if it doesn't then we return a statement stating that there are no links in the file. 
 
+This resulted in this output: 
+
+![fix1](fix1.png)
+
 ## Second Code Change
 
 ![code2](code-change-2.png)
@@ -24,4 +28,20 @@ The file that made me make this change was [test file 6](https://github.com/ajkr
 
 There wasn't a failure message per se, however the code identified the image as a link. To avoid this happening, I added an if statement in the code that checks if the first index of the line contains a "!". If it does then it is an image and it will be skipped. I got this code from when the group was working on [Hang Liu's bug](https://github.com/HangLiu01/markdown-parse/blob/1ecefe3d1e32cd5c54f991ec3016bc31ef003f8b/MarkdownParse.java). Instead of an else statement from my code in the first code change, I switched it for another if statement that checks if the list is empty then return a statement indicating so. This is to avoid the problem of if the file has both a link and an image. 
 
+This resulted in this output: 
+
+![fix2](fix2.png)
+
 ## Third Code Change 
+
+![code3](code-change-3.png)
+
+The file that made me make this change was [test file 2](https://github.com/ajkristanto/markdown-parse/blob/main/test-file2.md) 
+
+![fail3](fail-3.png)
+
+The failure message just indicates that the string index is out of bounds. It is trying to extract a character that does not exist in the string. To fix this issue, I added an if statement to check that if the remaining of the markdown does not contain an '[' then to break from the while loop. 
+
+This resulted in this output: 
+
+![fix3](fix3.png)
