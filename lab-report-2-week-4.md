@@ -26,7 +26,7 @@ The file that made me make this change was [test file 6](https://github.com/ajkr
 
 ![fail2](fail-2.png)
 
-There wasn't a failure message per se, however the code identified the image as a link. To avoid this happening, I added an if statement in the code that checks if the first index of the line contains a "!". If it does then it is an image and it will be skipped. I got this code from when the group was working on [Hang Liu's bug](https://github.com/HangLiu01/markdown-parse/blob/1ecefe3d1e32cd5c54f991ec3016bc31ef003f8b/MarkdownParse.java). Instead of an else statement from my code in the first code change, I switched it for another if statement that checks if the list is empty then return a statement indicating so. This is to avoid the problem of if the file has both a link and an image. 
+There wasn't a failure message per se, however the code identified the image as a link. To avoid this happening, I added an if statement in the code that checks if the first index of the line contains a "!". If it does then it is an image and it will be skipped. I got this code from when the group was working on [Hang Liu's bug](https://github.com/HangLiu01/markdown-parse/blob/1ecefe3d1e32cd5c54f991ec3016bc31ef003f8b/MarkdownParse.java). Instead of an else statement from my code in the first code change, I switched it for another if statement that checks if the list is empty then return a statement indicating so. This is to avoid the problem of if the file has both a link and an image. It is also to state that there is no links in the file if there is only an image. 
 
 This resulted in this output: 
 
