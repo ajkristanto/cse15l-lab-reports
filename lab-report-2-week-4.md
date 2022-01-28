@@ -36,7 +36,7 @@ This resulted in this output:
 
 ![code3](code-change-3.png)
 
-The file that made me make this change was [test file 2](https://github.com/ajkristanto/markdown-parse/blob/main/test-file2.md) 
+The file that made me make this change was [test file 2](https://github.com/ajkristanto/markdown-parse/blob/7e2670f006fcf6c9ab1153ffc5ac0c1e4961606f/test-file2.md) 
 
 ![fail3](fail-3.png)
 
