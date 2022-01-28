@@ -6,7 +6,7 @@ This webpage will be for lab report 2!
 
 ![code1](code-change-1.png) 
 
-The file that made me make this change was an [empty file](https://github.com/ajkristanto/markdown-parse/blob/main/empty-file.md). 
+The file that made me make this change was an [empty file](https://github.com/ajkristanto/markdown-parse/blob/7e2670f006fcf6c9ab1153ffc5ac0c1e4961606f/empty-file.md). 
 
 ![fail1](fail-1.png) 
 
@@ -22,7 +22,7 @@ This resulted in this output:
 
 ![code2](code-change-2.png)
 
-The file that made me make this change was [test file 6](https://github.com/ajkristanto/markdown-parse/blob/main/test-file6.md) 
+The file that made me make this change was [test file 6](https://github.com/ajkristanto/markdown-parse/blob/7e2670f006fcf6c9ab1153ffc5ac0c1e4961606f/test-file6.md) 
 
 ![fail2](fail-2.png)
 
