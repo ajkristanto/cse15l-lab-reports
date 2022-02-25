@@ -2,6 +2,11 @@
 
 To decide which is the real links, I used the [CommonMark demo site](https://spec.commonmark.org/dingus/). 
 
+The markdowns I looked at: 
+
+[My markdown](https://github.com/ajkristanto/markdown-parse)
+[The markdown I reviewed](https://github.com/IncogOwl/markdown-parse), I reviewed an old version of it on Feb 3rd. 
+
 ## Snippet 1
 
 ![Snippet1](snip1-1.png)
@@ -62,7 +67,19 @@ Then this is the result:
 
 It also didn't pass because the assertEquals was not equal. This code seemed to have stopped running after it read that there was a closed bracket within the link. This is because it didn't consider example.com as a result. 
 
-To fix my code, I believe that there is something crucially wrong with one of my if statements because of the indexOutOfBounds error. Hence to fix the error, 
+To fix my code, I believe that there is something crucially wrong with one of my if statements because of the indexOutOfBounds error. Hence to fix the error, I will need to investigate line 22 in my code. However, line 22 is my checker to check if it is an image or not. Hence, to avoid this error I would need to think of a way to ignore an image while also accounting for the error from snippet 2. Since the code I reviewed does not have this problem, I can take some pointers on how to fix it. However when I add an additional conditional to the if statement and modified it to: 
+```
+if (nextOpenBracket > 0 && markdown.charAt(nextOpenBracket - 1) == '!') {
+
+``` 
+
+It now produces output which is still wrong: 
+
+![Snippet2-Fix](snippet2-fix.png)
+
+Hence, to fix this I just need a conditional statement that will check for invalid components in the string such as (). Then, this should produce the correct output.
+
+
 
 ## Snippet 3
 
@@ -91,4 +108,15 @@ Then this is the result:
 
 It also didn't pass because the assertEquals was not equal. 
 
-To fix my code, I believe that there is something crucially wrong with one of my if statements because of the indexOutOfBounds error. Hence to fix the error, 
+To fix my code, I believe that there is something crucially wrong with one of my if statements because of the indexOutOfBounds error. Hence to fix the error, I will need to investigate line 22 in my code. However, line 22 is my checker to check if it is an image or not. Hence, to avoid this error I would need to think of a way to ignore an image while also accounting for the error from snippet 3. Since the code I reviewed does not have this problem, I can take some pointers on how to fix it. However when I add an additional conditional to the if statement and modified it to from my fix in snippet 2: 
+```
+if (nextOpenBracket > 0 && markdown.charAt(nextOpenBracket - 1) == '!') {
+
+``` 
+
+It now produces output which is still wrong: 
+
+![Snippet3-Fix](snippet3-fix.png)
+
+Hence, to fix this I just need a conditional statement that will check for invalid components in the string and the link declaration such as white spaces. If I add this, the code should work. 
+   
