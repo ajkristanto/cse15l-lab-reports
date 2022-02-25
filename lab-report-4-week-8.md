@@ -69,7 +69,7 @@ To fix my code, I believe that there is something crucially wrong with one of my
 ![Snippet3](snip3-1.png)
 ![Snippet3](snip3-2.png)
 
-From the website, I decided that the wanted links would be what is referred to as an href in the HTML. Hence the links would be: "a.com", "a.com(())", "example.com". However, since "(())" is invalid for a link, I just changed it to "a.com" when testing.
+From the website, I decided that the wanted links would be what is referred to as an href in the HTML. Hence the links would be: "https://ucsd-cse15l-w22.github.io/".
 
 From my own implementation: 
 
@@ -78,7 +78,6 @@ From my own implementation:
 Then this is the result: 
 
 ![S3-Mine-Result](snip3-test-me-r.png)
-
 
 It didn't pass because there was a String index out of range exception.  
 
@@ -90,7 +89,6 @@ Then this is the result:
 
 ![S3-Rev-Result](snip3-test-rev-r.png)
 
-
-It also didn't pass because the assertEquals was not equal. This code seemed to have stopped running after it read that there was a closed bracket within the link. This is because it didn't consider example.com as a result. 
+It also didn't pass because the assertEquals was not equal. 
 
 To fix my code, I believe that there is something crucially wrong with one of my if statements because of the indexOutOfBounds error. Hence to fix the error, 
