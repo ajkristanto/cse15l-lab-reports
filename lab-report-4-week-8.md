@@ -5,6 +5,7 @@ To decide which is the real links, I used the [CommonMark demo site](https://spe
 The markdowns I looked at: 
 
 [My markdown](https://github.com/ajkristanto/markdown-parse)
+
 [The markdown I reviewed](https://github.com/IncogOwl/markdown-parse), I reviewed an old version of it on Feb 3rd. 
 
 ## Snippet 1
